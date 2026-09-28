@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="ceb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12001f">
+  <title>Happy Birthday, Honney 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <!-- Cinematic background -->
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+  <div class="stars"></div>
+
+  <!-- INTRO -->
+  <section id="intro" class="scene active">
+    <div class="intro-content">
+      <div class="small-text cinematic">USA KA GAMAY NGA SURPRISE...</div>
+      <h1 class="cinematic delay1">HOY, HONNEY. 👀</h1>
+      <p class="cinematic delay2">
+        Ayaw sa pag-exit ha...<br>
+        naa koy gamay nga gipangandaman para nimo. 😂
+      </p>
+
+      <button id="openBtn" class="main-btn cinematic delay3">
+        ABLIHI ANG SURPRISE 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- BIRTHDAY REVEAL -->
+  <section id="birthday" class="scene">
+    <div class="cinematic-card">
+      <div class="cake">🎂</div>
+      <div class="eyebrow">KARON NGA ADLAW...</div>
+      <h1>HAPPY BIRTHDAY</h1>
+      <h2>HONNEY! 💜</h2>
+      <p>
+        Karon imong adlaw, mao nga bawal sa ang stress.
+        Birthday nimo baya. 😂
+      </p>
+      <button class="main-btn next-btn" data-next="joke">
+        SUNOD ✨
+      </button>
+    </div>
+  </section>
+
+  <!-- JOKE -->
+  <section id="joke" class="scene">
+    <div class="cinematic-card joke-card">
+      <div class="loading-icon">⏳</div>
+      <div id="loadingText">NAG-ANDAM SA BIRTHDAY MESSAGE...</div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <div id="loadingPercent">0%</div>
+
+      <div id="errorMessage" class="hidden">
+        <div class="error-icon">😂</div>
+        <h2>AYAW PAGKATAWA!</h2>
+        <p>
+          <b>ERROR 404:</b><br>
+          Dili ma-process ang birthday message.
+        </p>
+        <p class="error-small">
+          Reason: sobra ka ka-special para sa ordinaryong system. HAHAHA.
+        </p>
+
+        <button class="main-btn" id="retryBtn">
+          SUWAY PAG-USAB 😂
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter" class="scene">
+    <div class="letter-wrap">
+      <div class="letter-top">
+        <span>💌</span>
+        <small>PARA SA AKONG HONNEY</small>
+      </div>
+
+      <div class="letter-paper">
+        <h1>Happy Birthday, Honney! 🎂</h1>
+
+        <div id="letterText" class="typewriter"></div>
+
+        <button class="main-btn next-btn hidden" id="letterNext" data-next="photo">
+          SUNOD 💜
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO REVEAL -->
+  <section id="photo" class="scene">
+    <div class="photo-scene">
+
+      <div class="photo-intro">
+        <span>📸</span>
+        <p>USA RA KA PICTURE...</p>
+        <h2>PERO DAKO'G MEANING. 💜</h2>
+      </div>
+
+      <div class="photo-frame">
+        <div class="photo-shine"></div>
+        <img src="honney.jpg" alt="Honney">
+      </div>
+
+      <p class="photo-caption">
+        “Mao ni ang usa sa mga reason nganong special kaayo ni nga adlaw para nako.” ❤️
+      </p>
+
+      <button class="main-btn next-btn" data-next="quiz">
+        PADAYON 😂
+      </button>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="scene">
+    <div class="cinematic-card quiz-card">
+      <div class="quiz-number">HONNEY QUIZ 😂</div>
+
+      <h1>
+        Kinsa akong<br>
+        pinakapaboritong tawo?
+      </h1>
+
+      <div class="answers">
+        <button class="answer">A. Honney 💜</button>
+        <button class="answer">B. Honney 😂</button>
+        <button class="answer">C. Honney 😭</button>
+        <button class="answer">D. Honney kay obvious man 🤣</button>
+      </div>
+
+      <div id="quizResult" class="quiz-result"></div>
+
+      <button id="quizNext" class="main-btn hidden">
+        SUNOD 🥹
+      </button>
+    </div>
+  </section>
+
+  <!-- SERIOUS -->
+  <section id="serious" class="scene">
+    <div class="serious-content">
+      <div class="serious-line"></div>
+
+      <p class="serious-small">
+        OKAY... ENOUGH SA ATONG KABUANG.
+      </p>
+
+      <h1>
+        KANI,<br>
+        SERYOSO NA GYUD KO.
+      </h1>
+
+      <p class="serious-text">
+        Dili tanan butang kinahanglan joke...
+        labi na kung ikaw ang topic. ❤️
+      </p>
+
+      <button class="main-btn next-btn" data-next="finalLetter">
+        BASAHA 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- FINAL LETTER -->
+  <section id="finalLetter" class="scene">
+    <div class="final-letter">
+      <div class="heart-big">❤️</div>
+
+      <h1>Para Nimo, Honney</h1>
+
+      <p>
+        Happy Birthday sa usa sa mga tawo nga gusto nako
+        makita nga malipayon pirmi.
+      </p>
+
+      <p>
+        Unta karong adlawa, ma-feel nimo kung unsa ka ka-special.
+        Dili lang tungod kay birthday nimo,
+        pero tungod kay naa kay lugar nga espesyal sa akong heart.
+      </p>
+
+      <p>
+        Salamat sa mga katawa, sa mga memories,
+        sa mga moments nga bisan simple lang,
+        mahimong memorable tungod kay ikaw ang kauban.
+      </p>
+
+      <p>
+        Basin dili ko perpekto sa pagpangita og sakto nga words,
+        pero usa ra gyud akong gusto nga masulti:
+      </p>
+
+      <div class="highlight">
+        <span>“DESERVE NIMO ANG KALIPAY.”</span>
+      </div>
+
+      <p>
+        Enjoy imong birthday, Honney.
+        Ayaw kalimti nga karon kay imong adlaw,
+        so pag-enjoy ug pag-smile. 😊
+      </p>
+
+      <p class="signature">
+        — Gikan sa usa ka tawong nag-andam ani para nimo. 💜
+      </p>
+
+      <button class="main-btn next-btn" data-next="gift">
+        NAA PA KO'Y USA... 🎁
+      </button>
+    </div>
+  </section>
+
+  <!-- GIFT -->
+  <section id="gift" class="scene">
+    <div class="gift-scene">
+
+      <p class="gift-small">ABI NIMO HUMAN NA?</p>
+      <h1>NAA PA KO'Y USA KA SURPRISE. 👀</h1>
+
+      <button id="giftBtn" class="gift-box">
+        <span>🎁</span>
+        <small>ABLIHI</small>
+      </button>
+
+      <div id="giftMessage" class="hidden gift-message">
+        <div class="final-confetti">🎉 🎂 🎉</div>
+
+        <h2>HAPPY BIRTHDAY, HONNEY! 💜</h2>
+
+        <p>
+          Unta nalipay ka sa akong gamay nga digital surprise. 😂
+        </p>
+
+        <p>
+          Bisan simple ra ni,
+          gihimo nako ni para naa kay gamay nga smile karong imong adlaw.
+        </p>
+
+        <div class="final-love">
+          💜 HAPPY BIRTHDAY 💜
+        </div>
+
+        <p class="end-line">
+          Enjoy your day, Honney. 🎂✨
+        </p>
+
+        <button id="restartBtn" class="main-btn">
+          🔄 BALIKA ANG SURPRISE
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFETTI -->
+  <div id="confetti"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
